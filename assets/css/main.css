@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-image: linear-gradient(to top left, #39E945, #1AC177, #39E945);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-navegacao {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+.navegacao {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.navegacao a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+/*  */
+
+.meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+    padding-top: 8%;
+}
+.meio-t {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+.qrcode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulo {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #4d4f51;
+}
+.texto-meio {
+    width: 100%;
+    padding: 0 10px;
+    text-align: justify;
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: 3%;
+}
+.text {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    color: #4d4f51;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.botaoapp {
+    border: solid 1px #4d4f51;
+    border-radius: 10px;
+    width: 100%;
+    height: 55px;
+    max-width: 235px;
+    font-family: poppins, sans-serif;
+    font-size: 15px;
+    color: #4d4f51;
+    box-shadow: #4d4f51 3px 3px 3px 1px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*  */
+
+.rodape {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 8%;
+}
+.text-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    background-image: linear-gradient(to top left, #39E945, #1AC177, #39E945);
+    padding: 20px;
+    width: 100%;
+}
+.sub {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* mobile */
+
+@media (max-width:900px){
+    .subtitulo {
+        text-align: center;
+    }
+    .navegacao a {
+        padding: 10px;
+    }
+    .botao {
+        justify-content: center;
+    }
+    .text{
+        text-align: center;
+        text-align: justify;
+    }
+}
+@media (max-width:760px){
+    .container-navegacao {
+        flex-wrap: wrap;        
+        justify-content: center;
+    }
+    .logo {
+        padding: 0 5px;
+        margin-bottom: 6px;
+    }
+    .meio-t {
+        flex-direction: column;
+        align-items: center;
+    }
+    .qrcode {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 425px;
+        padding: 0;
+    }
+}
+@media(max-width:676px){
+    .navegacao {
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+@media(max-width:462px){    
+    .botao {
+        flex-direction: column;        
+        width: 100%;
+    }
+    .botaoapp{
+        max-width: 60%;
+    }
+}
+@media(max-width:436px){
+    .qrcode {
+        max-width: 275px;
+    }
+}

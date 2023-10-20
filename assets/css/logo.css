@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-image: linear-gradient(to top left, #39E945, #1AC177, #39E945);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-navegacao {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+.navegacao {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.navegacao a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 0 5px;
+}
+.aa{
+    text-align: center;
+    padding-top: 5%;
+}
+
+/*  */
+.rodape {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 6%;
+        bottom: 0;
+        position: fixed;
+        text-align: center;
+    
+}
+.text-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    background-image: linear-gradient(to top left, #39E945, #1AC177, #39E945);
+    padding: 20px;
+    width: 100%;
+}
+.sub {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* mobile */
+@media (max-width:900px){
+    .navegacao a {
+        padding: 10px;
+    }
+    .aa{
+        padding-top: 15%;
+    }
+}
+@media (max-width:760px){
+    .container-navegacao {
+        flex-wrap: wrap;        
+        justify-content: center;
+    }
+    .logo {
+        padding: 0 5px;
+        margin-bottom: 6px;
+    }
+    .b {
+        flex-direction: column;
+        align-items: center;
+    }
+    .aa{
+        padding-top: 15%;
+    }
+}
+@media(max-width:676px){
+    .navegacao {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .aa{
+        padding-top: 20%;
+    }
+}
+@media(max-width:462px){    
+    .aa{
+        padding-top: 35%;
+    }
+}
+@media(max-width:436px){
+    .aa{
+        padding-top: 50%;
+    }
+}
